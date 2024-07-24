@@ -1,7 +1,5 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
 import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -21,11 +19,11 @@ export default function RootLayout({
     <html lang='en'>
       <body className={inter.className}>
         {/* Always show navigation and footer on all pages. */}
-        <Navbar />
+        {/* <Navbar /> */}
         {/* Add space so children are not covered by navbar. */}
-        <div className='h-20' />
+        {/* <div className='h-20' /> */}
         {children}
-        <Footer />
+        {/* <Footer /> */}
         <script async src='/dist/flowbite.min.js'></script>
       </body>
     </html>
